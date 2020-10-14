@@ -30,6 +30,7 @@
                 padding: 0px;
                 background-image: linear-gradient(darkblue,cyan);
                 display: none;
+                z-index: 
             }
 
             .dropdown:hover .dropdown-content {
