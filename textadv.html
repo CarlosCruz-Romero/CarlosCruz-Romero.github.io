@@ -117,7 +117,7 @@
                 p1.innerHTML = "Well it looks like you died and were sent to the bad place. Congratulations";
                 p2.innerHTML = "I don't know what you did but it must've been pretty bad.";
                 p3.innerHTML = "Let's explore.";
-                img.src = "images/intro.jpg";
+                img.src = "textimg/intro.jpg";
                 b1.innerHTML = "Explore";
                 b2.style.display = "none"
                 b3.style.display = "none";
@@ -125,7 +125,7 @@
             }
 
             function explore(){
-                img.src="images/explore.jpg";
+                img.src="textimg/explore.jpg";
                 p1.innerHTML = "You encounter a stange pathetic looking man.";
                 p2.innerHTML = "\"Hello there.\" he says. \"I am Otio the sloth, and welcome to heck. Enjoy your stay!\"";
                 p3.innerHTML = "Wait, your dead? What do you do";
@@ -135,7 +135,7 @@
             }
 
             function accept(){
-                img.src="images/cappy.jpg";
+                img.src="textimg/flames.jpg";
                 p1.innerHTML = "Really? That's it?";
                 p2.innerHTML = "I expected more of a story.";
                 p3.innerHTML = "Well it looks like you spend an eternity of suffering.";
@@ -152,26 +152,25 @@
             }
 
             function yespb(){
-                img.src="images/current.jpg";
+                img.src="textimg/yespb.jpg";
                 p1.innerHTML = "\"Neat, let's go!\"";
                 p2.innerHTML = "You pick up the weird creature on your back and head";
                 p3.innerHTML = "\"Let's go to the Burning City, gotta be someone there to help.\"";
                 b1.innerHTML = "Head Off";
                 b2.style.display = "none";
             }
-
-            //////remeber To Add This Route Later
+            
             function nopb(){
-                img.src="images/current.jpg";
+                img.src="textimg/cursed.jpg";
                 p1.innerHTML = "\"Well then go away, you gonna burn here without me!\"";
                 p2.innerHTML = "You walk away from the stinky demon, concerend about what his words meant.";
-                p3.innerHTML = "\"In the distance, a red city is seen.\"";
-                b1.innerHTML = "Go to the City";
+                p3.innerHTML = "However, you really shouldn't go alone, because there isn't coding for the route :D";
+                b1.innerHTML = "Restart";
                 b2.style.display = "none";
             }
 
             function meetEnvy(){
-                img.src="images/current.jpg";
+                img.src="textimg/meetEnvy.jpg";
                 p1.innerHTML = "While in the city, Otio leads you to another demon";
                 p2.innerHTML = "Otio got up to the demon. \"Hey Aemu, you said you know where Lucifer's castle is, right?\"";
                 p3.innerHTML = "The demon spoke in a quite yet scratchy voice. \"I do, but I'll tell you if your friend gives me something\""
@@ -181,7 +180,7 @@
             }
 
             function giveHim(){
-                img.src="images/current.jpg";
+                img.src="textimg/envyKill.jpg";
                 p1.innerHTML = "\"Yes, finally! I was sick of ths liver.\"";
                 p2.innerHTML = "Before you could ask, Aemu reached into your side and tour out your liver"
                 p3.innerHTML = "You fell onto the floor, slowly feeling your life drift away. Maybe next time don't trust random demons, except for the first one, he's cool"
@@ -189,7 +188,7 @@
                 b2.style.display = "none";
             }
             function noToEnvy(){
-                img.src="images/current.jpg";
+                img.src="textimg/otioSlaps.jpg";
                 p1.innerHTML = "Aemu got upset. \"Well then you can-\"";
                 p2.innerHTML = "Before he could finish, Otio slapped him, knocking him down. \"If you wanted a bettr liver then quit you alcoholism\""
                 p3.innerHTML = "Aemu got up and grumbled. \"Fine, I'll do it, let's head to the forest\""
@@ -198,7 +197,7 @@
             }
 
             function bridge(){
-                img.src = "images/current.jpg";
+                img.src = "textimg/bridge.jpg";
                 p1.innerHTML = "In front of you was a old and torn bridge made of cracked stone slabs and lousy rope. Underneath the bridge was a huge chasm with several glowing eyes"
                 p2.innerHTML = "\"It be good for us not to fall in their\" Aemu blurted"
                 p3.innerHTML = "To the right you notice a tree with an unusually long vine, it could work"
@@ -208,21 +207,168 @@
             }
 
             function useBridge(){
-                img.src = "images/current.jpg";
+                img.src = "textimg/bridgeRun.jpg";
                 p1.innerHTML = "Without any hesitation, you ran across the faulty bridge";
                 p2.innerHTML = "One of the demons shouted at you, but you were too far too tell.\"What are you doing!\"";
-                p3.innerHTML = "Yet, you managed to make it to the other side of the chasm. The two demons simply floated over the chasm";
-                b1.innerHTML = "Into the Forest"
+                p3.innerHTML = "Yet, you managed to make it to the other side of the chasm. However this is wear your story ends. This was meant to continue onwards to more choices that affected the story, but JavaScript has limited my If Else statements. Oh well";
+                b1.style.display = "none";
                 b2.style.display = "none";
             }
 
             function useVine(){
-                img.src = "images/current.jpg";
-                p1.innerHTML = "You spen time rapping part of the vine around the tree, yet keeping it long enough to swing over the chasm"
+                img.src = "textimg/useVine.jpg";
+                p1.innerHTML = "You spend time rapping part of the vine around the tree, yet keeping it long enough to swing over the chasm"
                 p2.innerHTML = "You swing on the vine and into the chasm, however the moment you hit the low point, the monster shot out a black tendril from its mouth onto you"
                 p2.innerHTML = "I'll save you the details, his didn't end pretty"
+                p3.innerHTML = "Let's try again"
                 b1.innerHTML = "Try Again";
+                b2.style.display = "none";
+            }
+
+            function forestA(){
+                img.src = "textimg/forest.jpg";
+                p1.innerHTML = "In the forest, an entity lurks through the forest, a dangeroues one";
+                p2.innerHTML = "\"We're very cloes, we need to avoid that thing first\"";
+                p3.innerHTML = "Now what to do?";
+                b1.innerHTML = "Run";
                 b2.style.display = "block";
+                b2.innerHTML = "Sneak Through";
+            }
+
+            function runEntity(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "You all ran through the forst, only for you to gain the attention of the huge beeast";
+                p2.innerHTML = "The entity quickly snatched Aemu with his hands. You carried on with Otio"
+                p3.innerHTML = "Well he's dead";
+                b1.innerHTML = "Grieve and Continue";
+                b2.style.display = "none";
+            }
+
+            function hideEntity(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "You snuck through the trees, doing your best to avoid the creature";
+                p2.innerHTML = "Luckily, the creature did miss you";
+                p3.innerHTML = "You head to the gates of the castle";
+                b1.innerHTML = "To the Gate";
+                b2.style.display = "none";
+            }
+
+            function gateKeeper(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "After mourning Aemu, you continued to the gate of the castle"
+                p2.innerHTML = "The man at the gate spoke. \"If you wish to enter, one of you must hand your soul to me!\""
+                p3.innerHTML = "Otio grumbled. \"Oh come one!\""
+                b1.innerHTML = "Do it";
+                b2.style.display = "block";
+                b2.innerHTML = "Run"
+            }
+
+            function noOtioAndAemu(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "After ditching Otio, you walk through the castle and encouter the King Himself";
+                p2.innerHTML = "The man spoke in a deep, husky voice. \"You wish to leave, but you are so messed up that I can't let you.\""
+                p3.innerHTML = "What do you do?"
+                b1.innerHTML = "Give Up"
+                b2.innerHTML = "Fight"
+            }
+
+            function loneSurrend(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "Why would you even pick this?!"
+                p2.innerHTML = "You know this choice sends you back"
+                p3.innerHTML = "Whatever, Lucifer kills you, now go back already"
+                b1.innerHTML = "Try Again"
+                b2.style.display = "none"
+            }
+
+            function evilKing(){
+                img.src = "images/current.jpg"
+                p1.innerHTML = "You sucker punch Lucifer in the face, instantly killing him. You're just that evil"
+                p2.innerHTML = "Well you can't go back, the forces of heaven won't let your cruel soul back"
+                p3.innerHTML = "Now you are the king of the underworld and source of evil, congrats"
+                b1.style.display = "none";
+                b2.style.display = "none";
+            }
+
+            function noAemu(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "You walk with Otio to the main man himself"
+                p2.innerHTML = "\"I know what you want\" he spoke in a low and husky voice"
+                p3.innerHTML = "\"You'll have to pay up\""
+                b1.innerHTML = "Pay Up"
+                b2.style.display = "none"
+            }
+
+            function payUp(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "Otio pulls out an 100$ bill. \"Will this cover it?\""
+                p2.innerHTML = "\"Sure.\" Otio handed the dollar to Lucifer. \"You're free to go.\""
+                p3.innerHTML = "You were quickly sent to the human world, ready to spend your life contributing nothing to society"
+                b1.style.display = "none"
+                b2.style.display = "none"
+            }
+
+            function aemuGateKeeper(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "Once ther, you notice someone at the entrance"
+                p2.innerHTML = "The man at the gate spoke. \"If you wish to enter, one of you must hand your soul to me!\""
+                p3.innerHTML = "Otio grumbled. \"Oh come one!\"";
+                b1.innerHTML = "Do it";
+                b2.style.display = "block";
+                b2.innerHTML = "Run";
+            }
+
+            function noOtio(){
+                img.src = "images/current.jpg"
+                p1.innerHTML = "You and Aemu left Otio and ran through the castle and found Lucifer himself"
+                p2.innerHTML = "\"Can I Help you two?\" he asked in a low, husky voice"
+                p3.innerHTML = "Aemu whispers to you \"Hey can you move a bit?\""
+                b1.innerHTML = "Move"
+                b2.innerHTML = "Don't Move"
+            }
+
+            function dontMove(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "Aemu shouts at you. \"What are you do-\""
+                p2.innerHTML = "Before he could finish, both of you were blasted with fire"
+                p3.innerHTML = "That's what happens when you don't follow the plan"
+                b1.innerHTML = "Try Again"
+                b2.style.display = "none"
+            }
+
+            function moveForAemu(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "As you move, Aemu shoots Lucifer with a bolt from a crossbow, killing him"
+                p2.innerHTML = "\"Well I'm king now, enjoy your eternal suffering\""
+                p3.innerHTML = "Congrats, you ruined the afterlife forever now that Aemu is king for eternity, you dummy"
+                b1.style.display = "none";
+                b2.style.display = "none";
+            }
+
+            function demonTrioAndLucifer(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "You all enter the King's Chamber, the man turns to you"
+                p2.innerHTML = "\"You wish to leave, whu should I?\""
+                p3.innerHTML = "Aemu shouts out. \"Get Down!\""
+                b1.innerHTML = "Get Down"
+                b2.innerHTML = "Don't"
+            }
+            function otioAndYouDont(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "Aemu accidently shoots Otio with a crossbow, killing him"
+                p2.innerHTML = "Lucifer quickly sets you and Aemu a blaze"
+                p3.innerHTML = "Well you all went down together"
+                b1.innerHTML = "Try Again"
+                b2.style.display = "none"
+            }
+
+            function otioAndYouDuck(){
+                img.src = "images/current.jpg";
+                p1.innerHTML = "Aemu shoots Lucifer with a bolt from a crossbow, killing him";
+                p2.innerHTML = "Otio speaks up. \"Neat, I'm king, don't question it\"";
+                p3.innerHTML = "Otio sends you home and now the afterlife is more chill";
+                b1.style.display = "none";
+                b2.style.display = "none";
             }
 
             //////state Machine
@@ -303,9 +449,111 @@
                         state="intro";
                     }
                 }
-                else if (state="useBridge"){
+                else if(state="useBridge"){
                     if(button == 1){
-                        
+                        forestA();
+                        state="forestA";
+                    }
+                }
+                else if(state="forestA"){
+                    if(button == 1){
+                        runEntity();
+                        state="runEntity";
+                    }
+                    else if (button == 2){
+                        hideEntity();
+                        state="hideEntity";
+                    }
+                }
+                else if (state="runEntity"){
+                    if(button == 1){
+                        gateKeeper();
+                        state="gateKeeper";
+                    }
+                }
+                else if (state="hideEntity"){
+                    if(button == 1){
+                        aemuGateKeeper();
+                        state="aemuGateKeeper"
+                    }
+                }
+                else if (state = "gateKeeper"){
+                    if(button == 1){
+                        noOtioAndAemu();
+                        state="noOtioAndAemu";
+                    }
+                    else if(button == 2){
+                        noAemu();
+                        state="noAemu";
+                    }
+                }
+                else if (state = "noOtioAndAemu"){
+                    if(button == 1){
+                        loneSurrend();
+                        state="loneSurrend"
+                    }
+                    else if(button == 2){
+                        evilKing();
+                        state="evilKing"
+                    }
+                }
+                else if (state = "loneSurrend"){
+                    if(button == 1){
+                        intro();
+                        state="intro"}
+                }
+                else if (state = "noAemu"){
+                    if(button == 1){
+                        payUp();
+                        state="payUp";
+                    }
+                }
+                else if (state = "aemuGateKeeper"){
+                    if(button == 1){
+                        noOtio();
+                        state="noOtio"
+                    }
+                    else if(button == 2){
+                        demonTrioAndLucifer();
+                        state="demonTrioAndLucifer"
+                    }
+                }
+                else if (state = "noOtio"){
+                    if(button == 1){
+                        moveForAemu();
+                        state="moveForAemu";
+                    }
+                    else if(button == 2){
+                        dontMove();
+                        state="dontMove";
+                    }
+                }
+                else if (state = "dontMove"){
+                    if(button == 1){
+                        intro();
+                        state="intro";
+                    }
+                }
+                else if (state = "demonTrioAndLucifer"){
+                    if(button == 1){
+                        otioAndYouDuck();
+                        state="otioAndYouDuck"
+                    }
+                    else if(button == 2){
+                        otioAndYouDont();
+                        state="otioAndYouDont"
+                    }
+                }
+                else if (state = "otioAndYouDont"){
+                    if(button == 1){
+                        intro();
+                        state="intro"
+                    }
+                }
+                else if(state = "nopb"){
+                    if(button == 1){
+                        intro();
+                        state="intro"
                     }
                 }
             }
